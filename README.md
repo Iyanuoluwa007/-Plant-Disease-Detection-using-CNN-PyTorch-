@@ -19,6 +19,11 @@ The goal is to assist in **early plant disease detection**, which is crucial for
 
 ---
 
+## 🌐 Live Demo
+Try the app here: [Plant Disease Detection App](https://3mnekkk72qqwwnntmzeqwx.streamlit.app/)
+
+---
+
 ## 🛠️ Project Workflow
 
 1. **Data Preparation**
@@ -86,6 +91,8 @@ streamlit run app.py
 
 Upload a leaf image and get predictions instantly in your browser.
 
+#### ⚠️ Important: Place best_model.pth in the same directory as app.py before running.
+
 ## 📌 Features
 - CNN built from scratch (no transfer learning)
 - Train/validation/test pipeline with best model saving
@@ -96,4 +103,3 @@ Upload a leaf image and get predictions instantly in your browser.
 
 ## 📷 Example Streamlit App
 ![Streamlit Demo](sample_streamlit.png)
-
