@@ -82,7 +82,16 @@ class_names = [
 
 num_classes = len(class_names)
 model = PlantCNN(num_classes)
+
+# model.load_state_dict(torch.load("best_model.pth", map_location=device))
+import gdown, os
+
+if not os.path.exists("best_model.pth"):
+    url = "https://drive.google.com/file/d/1hIZCRZ4hUHJqDF9vDcxzcRm950Tezh38/view?usp=sharing" 
+    gdown.download(url, "best_model.pth", quiet=False)
+
 model.load_state_dict(torch.load("best_model.pth", map_location=device))
+
 model.to(device)
 model.eval()
 
