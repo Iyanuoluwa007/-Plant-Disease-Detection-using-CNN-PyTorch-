@@ -1,0 +1,34 @@
+Image,Top1,Top2,Top3
+AppleCedarRust1.JPG,Apple___Cedar_apple_rust (99.91%),Blueberry___healthy (0.09%),Apple___Black_rot (0.00%)
+AppleCedarRust2.JPG,Apple___Cedar_apple_rust (99.64%),Tomato___Bacterial_spot (0.35%),Grape___Black_rot (0.01%)
+AppleCedarRust3.JPG,Apple___Cedar_apple_rust (99.99%),Tomato___Late_blight (0.01%),Tomato___Bacterial_spot (0.01%)
+AppleCedarRust4.JPG,Apple___Cedar_apple_rust (99.71%),Tomato___Bacterial_spot (0.29%),Grape___Black_rot (0.00%)
+AppleScab1.JPG,Orange___Haunglongbing_(Citrus_greening) (89.13%),Apple___Apple_scab (5.75%),"Pepper,_bell___healthy (3.62%)"
+AppleScab2.JPG,Apple___Apple_scab (93.32%),Tomato___Leaf_Mold (4.96%),Peach___Bacterial_spot (0.96%)
+AppleScab3.JPG,Potato___Early_blight (69.15%),Strawberry___Leaf_scorch (21.36%),Tomato___Late_blight (3.39%)
+CornCommonRust1.JPG,Corn_(maize)___Common_rust_ (100.00%),Tomato___Late_blight (0.00%),Potato___Early_blight (0.00%)
+CornCommonRust2.JPG,Corn_(maize)___Common_rust_ (100.00%),Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.00%),Apple___Cedar_apple_rust (0.00%)
+CornCommonRust3.JPG,Corn_(maize)___Common_rust_ (100.00%),Tomato___Late_blight (0.00%),Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.00%)
+PotatoEarlyBlight1.JPG,Potato___Early_blight (99.97%),Tomato___Septoria_leaf_spot (0.01%),Tomato___Late_blight (0.01%)
+PotatoEarlyBlight2.JPG,Potato___Early_blight (99.97%),Tomato___Late_blight (0.03%),Tomato___Septoria_leaf_spot (0.00%)
+PotatoEarlyBlight3.JPG,Apple___healthy (95.74%),"Pepper,_bell___healthy (2.69%)",Potato___Early_blight (1.28%)
+PotatoEarlyBlight4.JPG,Potato___Early_blight (100.00%),Tomato___Late_blight (0.00%),Tomato___Septoria_leaf_spot (0.00%)
+PotatoEarlyBlight5.JPG,Potato___Early_blight (100.00%),Tomato___Late_blight (0.00%),Tomato___Septoria_leaf_spot (0.00%)
+PotatoHealthy1.JPG,Potato___healthy (88.75%),"Pepper,_bell___healthy (11.12%)","Pepper,_bell___Bacterial_spot (0.08%)"
+PotatoHealthy2.JPG,"Pepper,_bell___healthy (70.87%)",Potato___healthy (29.07%),Cherry_(including_sour)___healthy (0.04%)
+TomatoEarlyBlight1.JPG,Tomato___Early_blight (70.85%),Tomato___Late_blight (28.83%),"Pepper,_bell___healthy (0.24%)"
+TomatoEarlyBlight2.JPG,s,Tomato___Late_blight (1.89%),Peach___Bacterial_spot (0.18%)
+TomatoEarlyBlight3.JPG,Tomato___Early_blight (38.47%),Tomato___Tomato_Yellow_Leaf_Curl_Virus (34.26%),Tomato___Spider_mites Two-spotted_spider_mite (24.91%)
+TomatoEarlyBlight4.JPG,Tomato___Early_blight (99.57%),Tomato___Late_blight (0.15%),Tomato___Tomato_Yellow_Leaf_Curl_Virus (0.09%)
+TomatoEarlyBlight5.JPG,Tomato___Early_blight (95.26%),Tomato___Late_blight (3.34%),"Pepper,_bell___healthy (1.41%)"
+TomatoEarlyBlight6.JPG,Tomato___Spider_mites Two-spotted_spider_mite (80.79%),Tomato___Target_Spot (11.32%),Tomato___Early_blight (7.42%)
+TomatoHealthy1.JPG,Tomato___healthy (98.71%),Potato___Late_blight (0.97%),Tomato___Target_Spot (0.30%)
+TomatoHealthy2.JPG,Tomato___healthy (64.87%),Apple___healthy (22.06%),Orange___Haunglongbing_(Citrus_greening) (8.66%)
+TomatoHealthy3.JPG,Tomato___healthy (98.58%),Tomato___Target_Spot (1.42%),Tomato___Spider_mites Two-spotted_spider_mite (0.00%)
+TomatoHealthy4.JPG,Tomato___healthy (99.63%),Tomato___Target_Spot (0.36%),Peach___healthy (0.00%)
+TomatoYellowCurlVirus1.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus (99.99%),Orange___Haunglongbing_(Citrus_greening) (0.01%),Tomato___Early_blight (0.00%)
+TomatoYellowCurlVirus2.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus (99.98%),Tomato___Spider_mites Two-spotted_spider_mite (0.02%),Tomato___Leaf_Mold (0.00%)
+TomatoYellowCurlVirus3.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus (95.10%),Tomato___Late_blight (2.62%),Peach___Bacterial_spot (0.87%)
+TomatoYellowCurlVirus4.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus (99.99%),"Pepper,_bell___Bacterial_spot (0.01%)",Tomato___Spider_mites Two-spotted_spider_mite (0.00%)
+TomatoYellowCurlVirus5.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus (100.00%),Tomato___Bacterial_spot (0.00%),"Pepper,_bell___Bacterial_spot (0.00%)"
+TomatoYellowCurlVirus6.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus (100.00%),"Pepper,_bell___Bacterial_spot (0.00%)",Tomato___Bacterial_spot (0.00%)
