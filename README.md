@@ -85,3 +85,15 @@ streamlit run app.py
 ```
 
 Upload a leaf image and get predictions instantly in your browser.
+
+## 📌 Features
+- CNN built from scratch (no transfer learning)
+- Train/validation/test pipeline with best model saving
+- Loss curves, classification reports, confusion matrices
+- Single-image and batch predictions
+- Streamlit web app for easy use
+- Ready for deployment (Hugging Face Spaces, Docker, Render, etc.)
+
+## 📷 Example Streamlit App
+![Streamlit Demo](sample_streamlit.png)
+
