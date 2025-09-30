@@ -67,14 +67,21 @@ Example output:
 ```bash
 git clone https://github.com/yourusername/plant-disease-detection.git
 cd plant-disease-detection
+```
 
 ### 2. Install Requirements
+```bash
 pip install -r requirements.txt
+```
 
 ### 3. Train Model
+```bash
 jupyter notebook Plant_Disease.ipynb
+```
 
 ### 4. Run Web App
+```bash
 streamlit run app.py
+```
 
 Upload a leaf image and get predictions instantly in your browser.
