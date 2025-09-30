@@ -35,7 +35,7 @@ The goal is to assist in **early plant disease detection**, which is crucial for
 3. **Training**
    - Loss: `CrossEntropyLoss`  
    - Optimizer: `Adam (lr=0.001)`  
-   - Epochs: 10–15  
+   - Epochs: 10  
    - Monitored **training loss, validation loss, and accuracy**  
 
 4. **Model Saving**
