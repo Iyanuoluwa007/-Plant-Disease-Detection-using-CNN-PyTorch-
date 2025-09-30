@@ -74,7 +74,6 @@ model = CNNModel()
 import gdown, os
 
 if not os.path.exists("best_model.pth"):
-    # Use direct download link (not the view link)
     url = "https://drive.google.com/uc?id=1hIZCRZ4hUHJqDF9vDcxzcRm950Tezh38"
     gdown.download(url, "best_model.pth", quiet=False)
 
