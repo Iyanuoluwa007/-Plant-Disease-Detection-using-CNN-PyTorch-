@@ -59,3 +59,4 @@ The goal is to assist in **early plant disease detection**, which is crucial for
 - Model generalizes well across multiple plant species and disease types.  
 
 Example output:
+[View Notebook](predictions.csv)
