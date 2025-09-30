@@ -7,7 +7,7 @@ The goal is to assist in **early plant disease detection**, which is crucial for
 
 ## 📂 Dataset
 
-- Source: [Kaggle – Plant Diseases Detection 🍃 | PyTorch](https://www.kaggle.com/code/imtkaggleteam/plant-diseases-detection-pytorch)  
+- Source: [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset) 
 - The dataset contains thousands of labeled images of plant leaves.  
 - Example classes include:  
   - `Apple___Black_rot`  
