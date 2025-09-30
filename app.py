@@ -12,23 +12,24 @@ class PlantCNN(nn.Module):
         self.conv_layer = nn.Sequential(
             nn.Conv2d(3, 32, kernel_size=3, padding=1),
             nn.ReLU(),
-            nn.MaxPool2d(2,2),
-            
+            nn.MaxPool2d(2, 2),
+
             nn.Conv2d(32, 64, kernel_size=3, padding=1),
             nn.ReLU(),
-            nn.MaxPool2d(2,2),
-            
+            nn.MaxPool2d(2, 2),
+
             nn.Conv2d(64, 128, kernel_size=3, padding=1),
             nn.ReLU(),
-            nn.MaxPool2d(2,2),
+            nn.MaxPool2d(2, 2),
         )
         self.fc_layer = nn.Sequential(
             nn.Flatten(),
-            nn.Linear(128*16*16, 256),
+            nn.Linear(128 * 16 * 16, 256),
             nn.ReLU(),
             nn.Dropout(0.3),
             nn.Linear(256, num_classes)
         )
+
     def forward(self, x):
         x = self.conv_layer(x)
         x = self.fc_layer(x)
@@ -81,23 +82,9 @@ class_names = [
 
 num_classes = len(class_names)
 model = PlantCNN(num_classes)
-
-# Download model weights if not already present
-import requests, os
-
-if not os.path.exists("best_model.pth"):
-    # Use Hugging Face resolve link to get raw file content
-    url = "https://huggingface.co/Iyanuoluwa007/plant-disease-model/resolve/main/best_model.pth"
-    r = requests.get(url)
-    r.raise_for_status()
-    with open("best_model.pth", "wb") as f:
-        f.write(r.content)
-
-# Load trained weights
 model.load_state_dict(torch.load("best_model.pth", map_location=device))
 model.to(device)
 model.eval()
-
 
 # Transform
 transform = transforms.Compose([
