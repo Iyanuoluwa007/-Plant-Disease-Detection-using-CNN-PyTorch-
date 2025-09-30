@@ -6,21 +6,32 @@ import torch.nn.functional as F
 import torchvision.transforms as transforms
 
 # Define CNN model
-class CNNModel(nn.Module):
-    def __init__(self):
-        super(CNNModel, self).__init__()
-        self.conv1 = nn.Conv2d(3, 32, kernel_size=3, stride=1, padding=1)
-        self.pool = nn.MaxPool2d(2, 2)
-        self.conv2 = nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1)
-        self.fc1 = nn.Linear(64 * 56 * 56, 128)   # adjust based on your input size
-        self.fc2 = nn.Linear(128, len(class_names))  # number of output classes
-
+class PlantCNN(nn.Module):
+    def __init__(self, num_classes):
+        super(PlantCNN, self).__init__()
+        self.conv_layer = nn.Sequential(
+            nn.Conv2d(3, 32, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2,2),
+            
+            nn.Conv2d(32, 64, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2,2),
+            
+            nn.Conv2d(64, 128, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2,2),
+        )
+        self.fc_layer = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(128*16*16, 256),
+            nn.ReLU(),
+            nn.Dropout(0.3),
+            nn.Linear(256, num_classes)
+        )
     def forward(self, x):
-        x = self.pool(F.relu(self.conv1(x)))
-        x = self.pool(F.relu(self.conv2(x)))
-        x = x.view(x.size(0), -1)  # flatten
-        x = F.relu(self.fc1(x))
-        x = self.fc2(x)
+        x = self.conv_layer(x)
+        x = self.fc_layer(x)
         return x
 
 # Load model & weights
@@ -69,17 +80,19 @@ class_names = [
 ]
 
 num_classes = len(class_names)
-model = CNNModel()
+model = PlantCNN(num_classes)
 
+# Download model weights if not already present
 import gdown, os
-
 if not os.path.exists("best_model.pth"):
     url = "https://drive.google.com/uc?id=1hIZCRZ4hUHJqDF9vDcxzcRm950Tezh38"
     gdown.download(url, "best_model.pth", quiet=False)
 
+# Load trained weights
 model.load_state_dict(torch.load("best_model.pth", map_location=device))
 model.to(device)
 model.eval()
+
 
 # Transform
 transform = transforms.Compose([
