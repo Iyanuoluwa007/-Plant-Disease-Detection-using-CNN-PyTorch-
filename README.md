@@ -60,3 +60,21 @@ The goal is to assist in **early plant disease detection**, which is crucial for
 
 Example output:
 [View Predictions_Output](predictions.csv)
+
+## 🚀 How to Run
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/yourusername/plant-disease-detection.git
+cd plant-disease-detection
+
+### 2. Install Requirements
+pip install -r requirements.txt
+
+### 3. Train Model
+jupyter notebook Plant_Disease.ipynb
+
+### 4. Run Web App
+streamlit run app.py
+
+Upload a leaf image and get predictions instantly in your browser.
