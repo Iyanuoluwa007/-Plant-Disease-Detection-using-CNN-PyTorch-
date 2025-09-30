@@ -1,9 +1,8 @@
+streamlit
 torch
 torchvision
-torchaudio
+Pillow
 matplotlib
-seaborn
 scikit-learn
-pillow
-tqdm
-streamlit
+numpy
+gdown
