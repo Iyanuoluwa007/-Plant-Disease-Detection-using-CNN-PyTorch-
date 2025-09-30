@@ -83,10 +83,15 @@ num_classes = len(class_names)
 model = PlantCNN(num_classes)
 
 # Download model weights if not already present
-import gdown, os
+import requests, os
+
 if not os.path.exists("best_model.pth"):
-    url = "https://drive.google.com/uc?id=1hIZCRZ4hUHJqDF9vDcxzcRm950Tezh38"
-    gdown.download(url, "best_model.pth", quiet=False)
+    # Use Hugging Face resolve link to get raw file content
+    url = "https://huggingface.co/Iyanuoluwa007/plant-disease-model/resolve/main/best_model.pth"
+    r = requests.get(url)
+    r.raise_for_status()
+    with open("best_model.pth", "wb") as f:
+        f.write(r.content)
 
 # Load trained weights
 model.load_state_dict(torch.load("best_model.pth", map_location=device))
